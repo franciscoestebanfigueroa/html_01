@@ -1,0 +1,41 @@
+p{
+    font-family: "pancho";
+    color: rgb(175, 175, 233);
+    font-weight: 700;
+}
+.parafouno{
+    color: red;
+}
+body{
+ margin: 10px 20px;
+ background-color: bisque   ;
+}
+
+.formulario{
+    margin: 20px 10px /*h v*/;
+    margin: 20px 10px 15px 30px /*top right botom left*/;
+    margin: 0;/*todos*/
+    
+    background-color: black;
+    border-color: blue;
+    border-style: solid;
+    border-width: 3PX;
+    border: solid rebeccapurple 5px ;
+    /*es elresumen de arriba por eso lo anula*/
+    border-radius: 5px;
+}
+
+.inputs{
+    
+    height: auto;
+    width:auto;
+    padding:3px;
+   margin: 10px 10px;
+
+}
+.boton{
+    
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: brown;
+}
