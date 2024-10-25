@@ -33,3 +33,9 @@ textarea{
 h1{
     text-shadow: 0px 0px 5px #ffff;
 }
+label, legend{
+    
+    margin: 10px;
+    color: floralwhite;
+    text-transform: uppercase;
+}
