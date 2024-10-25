@@ -12,6 +12,7 @@ body{
 }
 
 .formulario{
+    width: 50vw;
     margin: 20px 10px /*h v*/;
     margin: 20px 10px 15px 30px /*top right botom left*/;
     margin: 0;/*todos*/
@@ -23,12 +24,14 @@ body{
     border: solid rebeccapurple 5px ;
     /*es elresumen de arriba por eso lo anula*/
     border-radius: 5px;
+    box-shadow: 0px 0px 10 #000;
 }
 
 .inputs{
-    
-    height: auto;
-    width:auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 3vh;
+    width:30vw;
     padding:3px;
    margin: 10px 10px;
 
