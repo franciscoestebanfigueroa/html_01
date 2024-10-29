@@ -1,19 +1,23 @@
 body{
     text-align: center;
     background: linear-gradient(to left, #000f, #0005);
-    height: vh;
+    
 }
 
 .formulario{
     margin: auto;
     background-color: #000a;
     width: 80vw;
-    padding: 15px 5px;
+    padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 40px  #11acb7b2
 }
 
 .inputs{
+    font-family: "pancho";
+    font-weight: 400;
+    font-size: 16px;
+
     border: solid 2px #fff5;
     width: 70vw;
     color: #ffff;
@@ -27,15 +31,52 @@ body{
     line-height: 2;
 }
 textarea{
-    min-height: 200px;
+   /* min-height: 200px;
+    min-width: 200px;
+    remplazo por rows en propiedades de textarea eso es cuestion de gusto
+    */
+    resize: none;
+    
+
     
 }
 h1{
     text-shadow: 0px 0px 5px #ffff;
+    text-transform: uppercase;
 }
 label, legend{
-    
     margin: 10px;
     color: floralwhite;
     text-transform: uppercase;
+    line-height: 2;/*alto de  linea */
+}
+fieldset{
+    border-color: #fff2;
+padding-bottom: 30px;
+margin-bottom: 40px;
+    border-radius: 20px;
+}
+select{
+    margin-left: 16px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: #fff4;
+    width: 200px;
+    height: 26px;
+    font-size: 16px;
+    line-height: 2px;
+    
+
+    
+}
+ option{
+   
+font-size: 18px; 
+   text-align: center;
+    line-height: 5;
+    background-color: #0005;
+    
+}
+.divselect{
+    text-align: left;
 }
