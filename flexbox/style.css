@@ -1,0 +1,82 @@
+body{
+    
+    margin: 0;
+}
+.menu{
+    
+    /*display: inline-block; transforma enbloque y los pone uno al lado del otro 
+    en cambio block los pone uno abajo del otro y usa todo el ancho
+    */
+  /*
+  
+  */
+  position: sticky;
+  top: 10px;
+  background-color: #0f02;
+  box-shadow: 0rem .5rem .8rem#0008;
+  text-align: center;
+  text-transform: uppercase;
+  border: .1rem solid #0f08;
+  min-width: 35rem;
+  font-size: 1.1rem;
+  margin: 0;
+    
+    
+    
+}
+
+.menu__item {
+    display: inline-block;
+    background-color: #0a01;
+    list-style: none;
+    
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    margin:0 3px;
+    
+}
+.item__link{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.item--login{
+    position: relative;
+    left: 20px;
+    /*
+    margin-left: 100px;
+    esto es para cuando no uso position relative
+    */
+    background-color: #0002;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: .3rem 0rem;
+    
+}
+
+.menu__item:hover{
+    box-shadow: .0rem 0rem 1rem #0f05;
+    outline: .1rem solid #0f0f;
+    background-color: #0f03;
+    
+}
+
+
+.menu__item:active{
+    background-color: #0a07;
+}
+
+
+.texto{
+    position: relative;
+    top: 20px;
+    font-size: xx-large;
+}
+
+.caja{
+    position:sticky;
+    width: 100vw;
+    height: 150px;
+    top: 10px;
+    background-color: red;
+}
