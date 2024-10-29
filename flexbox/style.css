@@ -1,25 +1,19 @@
 body{
-    
-    margin: 0;
+    position: relative;
+    margin: 0%;
 }
 .menu{
-    
-    /*display: inline-block; transforma enbloque y los pone uno al lado del otro 
-    en cambio block los pone uno abajo del otro y usa todo el ancho
-    */
-  /*
-  
-  */
-  position: sticky;
-  top: 10px;
-  background-color: #0f02;
+    position:sticky ;
+    top: 0px;
+    width: 100vw;
+  background-color: #2a4e;
   box-shadow: 0rem .5rem .8rem#0008;
   text-align: center;
   text-transform: uppercase;
   border: .1rem solid #0f08;
   min-width: 35rem;
   font-size: 1.1rem;
-  margin: 0;
+  
     
     
     
@@ -40,9 +34,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
-.item--login{
-    position: relative;
-    left: 20px;
+.item--login {
     /*
     margin-left: 100px;
     esto es para cuando no uso position relative
@@ -50,33 +42,70 @@ body{
     background-color: #0002;
     border-radius: 10px;
     font-size: 1.2rem;
-    padding: .3rem 0rem;
     
+    color:white;
+    padding: 10px;
+    margin-left: 5rem;
+    
+}
+.link--login{
+    color:white
 }
 
 .menu__item:hover{
     box-shadow: .0rem 0rem 1rem #0f05;
     outline: .1rem solid #0f0f;
-    background-color: #0f03;
+    background-color: #0f09;
+    color: #000f;
     
 }
 
 
 .menu__item:active{
+    
     background-color: #0a07;
 }
 
 
 .texto{
-    position: relative;
-    top: 20px;
+    transition-duration: 1s;
+    transition-property: color;
+    text-align: centerr;
+    word-spacing: 10px;
+    padding: 1.5rem;
     font-size: xx-large;
+    text-wrap: pretty;
+    color: #000a;
+    
 }
 
 .caja{
-    position:sticky;
     width: 100vw;
     height: 150px;
-    top: 10px;
     background-color: red;
+}
+h1{
+    display: inline-block;
+    left: 10px;
+    top: 10px;
+    bottom: 0px;
+    align-content: center;
+    text-align: center;
+
+    width: 50vw;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    box-shadow: 0px 0px 40px  #000;
+    top: -100px;
+    background:linear-gradient(to left, #0f01, #080e);
+
+    transition-property: color;
+    transition-duration: 1s;    
+    
+}
+
+.texto:hover{
+    color:#000f;
 }
