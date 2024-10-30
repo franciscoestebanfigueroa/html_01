@@ -1,55 +1,55 @@
 body{
-    position: relative;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+    
 }
 .menu{
-    position:sticky ;
-    top: 0px;
-    width: 100vw;
-  background-color: #2a4e;
-  box-shadow: 0rem .5rem .8rem#0008;
-  text-align: center;
-  text-transform: uppercase;
-  border: .1rem solid #0f08;
-  min-width: 35rem;
-  font-size: 1.1rem;
-  
-    
-    
+   position:sticky ;
+   top: 0px;
+   height: 5rem;
+   align-content: center;
+   background:linear-gradient(to left, #fff, #080e);  
+   box-shadow: 0rem .5rem .8rem#0008;
+   
+   text-transform: uppercase;
+   min-width: 35rem;
+   font-size: 1.1rem;
     
 }
 
 .menu__item {
     display: inline-block;
-    background-color: #0a01;
+    background-color: #0a05;
     list-style: none;
-    
     box-shadow: 0px 0px 10px black;
     border-radius: 5px;
-    margin:0 3px;
+    margin:0px 3px;
+    padding:6px;
+    
     
 }
 .item__link{
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
+    
+    
+    
 }
 .item--login {
-    /*
-    margin-left: 100px;
-    esto es para cuando no uso position relative
-    */
     background-color: #0002;
     border-radius: 10px;
     font-size: 1.2rem;
-    
-    color:white;
+    left:  10%;
     padding: 10px;
-    margin-left: 5rem;
+    margin-left: 60px;
+    
+    
     
 }
 .link--login{
-    color:white
+    color:black;
 }
 
 .menu__item:hover{
@@ -75,31 +75,26 @@ body{
     padding: 1.5rem;
     font-size: xx-large;
     text-wrap: pretty;
-    color: #000a;
+    color: #0008;
+    transition: color 1s;
     
 }
 
 .caja{
-    width: 100vw;
+    width: 10vw;
     height: 150px;
     background-color: red;
 }
-h1{
-    display: inline-block;
-    left: 10px;
-    top: 10px;
-    bottom: 0px;
-    align-content: center;
-    text-align: center;
 
-    width: 50vw;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+h1{
     position: sticky;
-    box-shadow: 0px 0px 40px  #000;
+    height: 160px;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 0px;
+    box-shadow: 0px 0px 0px  #000;
     top: -100px;
-    background:linear-gradient(to left, #0f01, #080e);
+    background:linear-gradient(to left,  #fff, #080e);
 
     transition-property: color;
     transition-duration: 1s;    
