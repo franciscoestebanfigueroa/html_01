@@ -1,0 +1,20 @@
+
+body{
+    background-color: aqua;
+}
+#id-checkbox{
+    display: none;
+}
+header label{
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#id-checkbox:checked ~ nav{
+    display: none;
+}
+
+header{
+    background-color: white;
+}
