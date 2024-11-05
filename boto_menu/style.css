@@ -13,6 +13,7 @@ header label{
 
 #id-checkbox:checked ~ nav{
     display: none;
+    
 }
 
 header{
