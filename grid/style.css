@@ -6,10 +6,15 @@ body{
     min-width: 300px;
     
     display: grid;
+
     flex-direction: column;
-    justify-content: start;
-    background-color:#999;
     grid-template-rows: minmax(min-content,60px) 1fr minmax(min-content,40px);
+    place-content: space-between;
+    /*
+    justify-content: space-between;
+   */
+   
+    background-color:#999;
 
     
 }
@@ -28,7 +33,7 @@ text-align: center;
 }
 .main_raper{
     
-
+    
     gap: 0px 20px;
     padding: 20px;
     background-color: #999;

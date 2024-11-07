@@ -1,0 +1,36 @@
+*{
+    border: solid 2px black;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;;
+}
+body{
+    display: grid;
+    grid-template-areas:
+     " header header "
+     " div_img div_img"
+     " div_quien_soy div_quien_soy"
+     " div_estudios div_cursos"
+     " footer footer"
+     ;
+}
+
+
+header{
+    grid-area: header;
+}
+.div_img{
+ grid-area:div_img ;   
+}
+.div_estudios{
+ grid-area:div_estudios ;   
+}
+.div_cursos{
+ grid-area:div_cursos ;   
+}
+.div_quien_soy{
+    grid-area: div_quien_soy;
+}
+footer{
+ grid-area: footer;   
+}
