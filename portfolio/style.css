@@ -9,6 +9,13 @@ body{
     padding: 0;
     height: 100vh;
     display: grid;
+    /*
+    definir areas manuales
+    */
+    grid-template-rows: 8% 22% 1fr 1fr 8%;
+
+    grid-template-columns: 40%;
+
     grid-template-areas:
      " header header "
      " div_img div_img"
