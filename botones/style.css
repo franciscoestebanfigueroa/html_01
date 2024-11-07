@@ -2,23 +2,77 @@
     
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    
+    
 }
+
 .container_bar{
-    width: 80%;
-    border: solid 2px #19dd;
+    animation-name: ancho;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    background-color: #19da;
+    width: auto;
+    border: solid 2px #19d;
     padding: 2px;
+    border-radius: 20px;
 
 }
 .bar{
-    
-    border-top-right-radius:    15px;
-    border-bottom-right-radius: 15px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: barra;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius:20px;
     height: 40px;
-    width: 50%;
-    background-color: rebeccapurple;
     
+    
+}
+span{
+   font-size: xx-large;
+   z-index: -1;
+
 }
 .label_bar{
         font-size: 18px;
+}
+.bar:active{
+}
+.bar:hover{
+    animation-play-state: paused;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: calc(1);
+    animation-fill-mode: both;
+}
+@keyframes barra {
+    0%{
+        width:15%; 
+    }
+    10%{
+        width:60%; 
+    }
+    50%{
+        width: 5%;
+    }
+    20%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes ancho{
+    from{
+        width: 60%;
+    }
+    to{
+        width: 80%;
+    }
 }
