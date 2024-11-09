@@ -1,20 +1,21 @@
 
 
 body{
+    
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
     display: grid;
-    background-color: #fff8;
+    background-color: #2228;
     /*
     definir areas manuales
     */
     grid-template-rows: 8% 35% 1fr 1fr 8%;
     
-    grid-template-columns: 40%;
-    
+    grid-template-columns: 3fr 1fr ;
+    gap: 20px;
     grid-template-areas:
     " header header "
     " div_img div_img"
@@ -65,13 +66,17 @@ header a{
     font-weight: 600;
     
 }
+.div_img img{
+    border-radius: 100%;
+    
+}
 
 
 .div_img{
 
-    height: 95%;
-    width:  95%;
-    background:linear-gradient(to bottom,#060a,#0004);
+    height: 100%;
+    width:  70%;
+    background:linear-gradient(to bottom,#48ee,#0004);
     box-sizing: border-box;
     border-radius: 20px;
     box-shadow: 0 0 40px #000a;
@@ -98,39 +103,128 @@ align-items: center;
 
  
 }
-.div_estudios{
- grid-area:div_estudios ;   
+h1,h2{
+
+    text-align: center;
 }
-.div_cursos{
- grid-area:div_cursos ;   
-}
-.div_quien_soy{
+.texto{
     box-sizing: border-box;
-    grid-area: div_quien_soy;
     background-color:#aaa5;
     border-radius: 20px;
     padding: 18px;
     margin-top: 10px;
     
-    max-width: 95%;
-    height: 100%;
+ 
     
     align-self: center;
     justify-self: center;
     box-shadow: 0 0 40px #000a;
 }
-.div_quien_soy p{
+
+
+ p{
 
     text-overflow: ellipsis;
     text-align: justify;
     text-wrap: pretty;
     font-size: x-large;
+    padding: 20px;
 }
-footer{
- grid-area: footer;   
+.div_quien_soy{
+    grid-area: div_quien_soy;
+    box-sizing: border-box;
+    margin: 0% 10%;
+    
 }
 
-.div_img img{
-    border-radius: 100%;
+.div_estudios{
     
+    grid-area:div_estudios ; 
+    box-sizing: border-box;
+    margin-left: 6.5em;
+}
+.div_cursos{
+    width: 80%;
+    height: 100%;
+    grid-area:div_cursos ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    box-sizing: border-box;
+    margin-right:6.5rem ;    
+    
+    background:linear-gradient(to right,#2229,#222);
+    ;
+   }
+
+   .div_cursos h2{
+       color: #aaa;
+   }
+
+button{
+    color: #fff8;
+    letter-spacing: 6px;
+    background-color: transparent;
+    border: solid 1px #48e;
+    margin: 4px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 4px;
+    animation-name:efecto_button ;
+    animation-iteration-count:infinite ;
+    animation-duration:.3s ;
+    
+    
+
+}   
+
+.button:hover{
+    
+    animation-play-state: paused;
+
+}
+
+footer{
+    padding: 20px 0px;
+    text-align: center;
+    align-self: center;
+    background-color: #222;
+    color: #48b;
+    font-size: 22px;
+    grid-area: footer;   
+}
+
+
+
+
+
+
+@keyframes efecto_button{
+
+    0%{
+        color: transparent;    
+    }
+    10%{
+        color: #48e;
+        
+
+    }
+   30%{
+    color: #48a;
+    }
+    50%{
+        color: #48f;
+    }
+    70%{
+        color: #48a;
+    }
+    90%{
+        color: #48f;
+    }
+    100%{
+        color: #48a;
+    }
 }
